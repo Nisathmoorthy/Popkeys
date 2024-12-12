@@ -414,56 +414,51 @@ function Home() {
       {/* MAIN CONTENT */}
 
       <footer>
-        <div className={Style.address} id="contact">
-          <div className={Style.contactimage}>
-            <img src={BottomLogo} />
+        <div className={Style.row}>
+          <div className={Style.col}>
+          <img src={BottomLogo} className={Style.bottomlogo} />
           </div>
-          <div className={Style.contactdetails}>
-            <h1>Contact Information</h1>
-            <h3>POPKEY PRIVATE LIMITED</h3>
-            <p>
-              <i class="fa-solid fa-location-dot"></i> Address: 43, Appadurai
-              1st St, Vasantha nagar, Chinna Chembarambakkam, Ayanavaram,
-              Chennai, Tamil Nadu 600023.
-            </p>
-            <p>
-              <i class="fa-solid fa-phone"></i> Phone: (+91)-7400 500 200
-            </p>
-            <p>
-              <i class="fa-solid fa-envelope"></i> Email: contact@popkey.in
-            </p>
-          </div>
-        </div>
-        <div className={Style.form}>
-          <h1>Contact Us</h1>
-          <input type="text" placeholder="Enter a Name" />
-          <br />
-          <input type="text" placeholder="Enter Email" />
-          <br />
-          <input type="text" placeholder="Phone Number" />
-          <br />
-          <textarea type="text" placeholder="Text Message" rows={5} />
-          <br />
-          <button>Submit</button>
 
-          <div className={Style.terms}>
+          <div className={Style.col} id={Style.col2}>
+            <h3>Contact us </h3>
+            <div className={Style.underline}><span></span></div>
+            <p>43, Appadurai 1st St,</p>
+            <p>Chinna Chembarambakkam,</p>
+            <p>Chennai, Tamil Nadu 600023.</p>
+            <p className={Style.email}>contact@popkey.in</p>
+            <h4>+91 - 7400 500 200</h4>
+          </div>
+          <div className={Style.col} id={Style.col3}>
+            <h3>links</h3>
+            <div className={Style.underline2}><span></span></div>
             <ul>
-              <li>
-                <Link to="privacy">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link to="privacy">Terms & Conditions</Link>
-              </li>
-              <li>
-                <Link to="privacy">Prohibited Items Policy</Link>
-              </li>
-              <li>
-                <Link to="privacy">Refund Policy</Link>
-              </li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Contacts</a></li>
             </ul>
           </div>
+          <div className={Style.col}>
+            <h3>Newsletter  </h3>
+            <div className={Style.underline3}><span></span></div>
+            <form>
+              <i class="far fa-envelope" id="envelope" ></i>
+              <input type="email" placeholder=" Enter your email id" required />
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div className={Style.social}>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-whatsapp"></i>
+              <i class="fab fa-pinterest"></i>
+            </div>
+          </div>
         </div>
+        <hr />
+        <p className={Style.copyright}>Popkeys © 2024 - All Rights Reserved</p>
       </footer>
+           
     </div>
   );
 }

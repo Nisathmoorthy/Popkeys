@@ -192,6 +192,146 @@
   color: #ea610e;
 }
 
+
+
+footer{
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(to right, #00093c,#2d0b00);
+  color: #fff;
+  padding: 50px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.bottomlogo{
+  width: 200px;
+  margin-top: 0px;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+#col2{
+  padding-left: 35px;
+}
+#col3{
+  padding-left: 50px;
+}
+.col h3{
+  width: fit-content;
+  font-size: 18px;
+  margin-bottom: 2px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.email{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+.col p{
+  font-family: "Varela Round", sans-serif ;
+  font-size: 14px;
+}
+.col h4{
+  font-family: "Varela Round", sans-serif ;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;  font-size: 14px;
+
+  font-family: "Varela Round", sans-serif;
+}
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form i{
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.social i{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+
+}
+
+.copyright{
+  text-align: center;
+  font-family:"Varela Round", sans-serif ;
+}
+.underline{
+  border: 2px solid grey;
+  margin-bottom: 50px;
+  width: 45%;
+  border-radius: 5px;
+}
+.underline2{
+  border: 2px solid grey;
+  margin-bottom: 50px;
+  width: 25%;
+  border-radius: 5px;
+}
+.underline3{
+  border: 2px solid grey;
+  margin-bottom: 50px;
+  width: 40%;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
 /* FOOTER STYLE */
 
 
@@ -208,12 +348,13 @@
   grid-template-columns: repeat(3, 400px);
   gap: 30px;
   justify-content: space-around;
-
   padding: 20px 20px 20px 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .box {
-  width: 400px;
+  width: 380px;
   height: 250px;
   background-color: white;
   display: flex;
@@ -242,6 +383,7 @@
   padding: 10px 15px;
   justify-content: center;
   text-align: center;
+  text-indent: 5px;
 }
 
 #box1 img {
@@ -299,6 +441,7 @@
   padding: 10px 15px;
   justify-content: center;
   text-align: center;
+  
 }
 
 #box3 img {
